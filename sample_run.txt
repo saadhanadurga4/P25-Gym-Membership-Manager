@@ -1,0 +1,509 @@
+================================================================================
+           P25 GYM MEMBERSHIP MANAGER - SAMPLE TERMINAL RUN TRANSCRIPT
+================================================================================
+Student Name    : Saadhana Durga S
+Register Number : 7376252IT316
+Project         : P25 Gym Membership Manager
+Execution Mode  : Interactive Terminal Simulation / Verified Program Transcript
+Execution Date  : 20-10-2026
+================================================================================
+
+[STEP 1: APPLICATION STARTUP & CURRENT DATE ENTRY]
+PS C:\Users\hello\OneDrive\Documents\7376252IT316_P25> python main.py
+==================================================
+  WELCOME TO P25 GYM MEMBERSHIP MANAGER
+==================================================
+Enter today's date (DD-MM-YYYY): 19-10-2026
+Session initialized with current date: 19-10-2026
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 1
+
+
+[STEP 2: OPTION 1 - REGISTER A NEW MEMBER (WITH INPUT VALIDATION)]
+--- REGISTER NEW MEMBER ---
+Enter member name: Vikram|Seth
+The character '|' is reserved and cannot be used in names.
+Enter member name: 
+Name cannot be empty. Please enter a valid name.
+Enter member name: Vikram Seth
+Enter phone number (10 digits): 98765
+Invalid phone number. Must be exactly 10 digits (e.g., 9876543210).
+Enter phone number (10 digits): abcdefghij
+Invalid phone number. Must be exactly 10 digits (e.g., 9876543210).
+Enter phone number (10 digits): 9876509876
+
+--- AVAILABLE MEMBERSHIP PLANS ---
+  1. Monthly      -  1 month(s) - Rs. 1,200
+  2. Quarterly    -  3 month(s) - Rs. 3,300
+  3. Half-yearly  -  6 month(s) - Rs. 6,000
+  4. Annual       - 12 month(s) - Rs. 10,800
+Select plan (1-4 or plan name): 5
+Invalid choice. Please enter 1, 2, 3, 4 or plan name (e.g., Monthly).
+Select plan (1-4 or plan name): Quarterly
+
+[SUCCESS] Member registered successfully!
+  Member ID    : G0013
+  Name         : Vikram Seth
+  Phone        : 9876509876
+  Plan         : Quarterly
+  Joining Date : 19-10-2026
+  Expiry Date  : 19-01-2027
+  Amount Paid  : Rs. 3,300
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 2
+
+
+[STEP 3: OPTION 2 - VIEW ALL REGISTERED MEMBERS]
+--- REGISTERED MEMBERS ---
+---------------------------------------------------------------------------------------
+ID       Name                   Phone          Plan           Join Date    Expiry Date 
+---------------------------------------------------------------------------------------
+G0001    Saadhana Durga         9876543210     Monthly        19-10-2026   19-11-2026  
+G0002    Dharshini R            9845123456     Quarterly      15-07-2026   15-01-2027  
+G0003    Kishanthika M          8072950715     Monthly        04-06-2025   04-07-2025  
+G0004    Arun Kumar             9123456780     Annual         10-01-2026   10-01-2027  
+G0005    Kavitha S              9234567891     Monthly        19-09-2026   19-10-2026  
+G0006    Praveen Raj            9345678912     Half-yearly    05-04-2026   05-10-2026  
+G0007    Sneha Patel            9456789123     Quarterly      24-07-2026   24-10-2026  
+G0008    Vignesh W              9567891234     Monthly        28-09-2026   28-10-2026  
+G0009    Meera Nair             9678912345     Half-yearly    15-05-2026   15-11-2026  
+G0010    Rahul Sharma           9789123456     Annual         01-08-2026   01-08-2027  
+G0011    Deepak Chandran        9890123457     Monthly        10-09-2026   10-10-2026  
+G0012    Ananya R               9901234568     Quarterly      01-09-2026   01-12-2026  
+G0013    Vikram Seth            9876509876     Quarterly      19-10-2026   19-01-2027  
+---------------------------------------------------------------------------------------
+Total Members: 13
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 3
+
+
+[STEP 4: OPTION 3 - RENEW MEMBERSHIP (EXPIRED MEMBER)]
+--- RENEW MEMBERSHIP ---
+Enter Member ID (e.g., G0001): G0006
+
+--- Current Member Details ---
+  Member ID    : G0006
+  Name         : Praveen Raj
+  Phone        : 9345678912
+  Current Plan : Half-yearly
+  Joining Date : 05-04-2026
+  Expiry Date  : 05-10-2026
+  Trainer      : Unassigned
+  Status       : Expired
+
+Select the new plan for renewal:
+
+--- AVAILABLE MEMBERSHIP PLANS ---
+  1. Monthly      -  1 month(s) - Rs. 1,200
+  2. Quarterly    -  3 month(s) - Rs. 3,300
+  3. Half-yearly  -  6 month(s) - Rs. 6,000
+  4. Annual       - 12 month(s) - Rs. 10,800
+Select plan (1-4 or plan name): Monthly
+
+[SUCCESS] Membership renewed successfully!
+  Member ID      : G0006
+  Name           : Praveen Raj
+  New Plan       : Monthly
+  Renewal Basis  : Calculated from 19-10-2026
+  New Expiry Date: 19-11-2026
+  Amount Paid    : Rs. 1,200
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 3
+
+
+[STEP 5: OPTION 3 - RENEW MEMBERSHIP (ACTIVE MEMBER)]
+--- RENEW MEMBERSHIP ---
+Enter Member ID (e.g., G0001): G0001
+
+--- Current Member Details ---
+  Member ID    : G0001
+  Name         : Saadhana Durga
+  Phone        : 9876543210
+  Current Plan : Monthly
+  Joining Date : 19-10-2026
+  Expiry Date  : 19-11-2026
+  Trainer      : Unassigned
+  Status       : Active
+
+Select the new plan for renewal:
+
+--- AVAILABLE MEMBERSHIP PLANS ---
+  1. Monthly      -  1 month(s) - Rs. 1,200
+  2. Quarterly    -  3 month(s) - Rs. 3,300
+  3. Half-yearly  -  6 month(s) - Rs. 6,000
+  4. Annual       - 12 month(s) - Rs. 10,800
+Select plan (1-4 or plan name): Quarterly
+
+[SUCCESS] Membership renewed successfully!
+  Member ID      : G0001
+  Name           : Saadhana Durga
+  New Plan       : Quarterly
+  Renewal Basis  : Calculated from 19-11-2026
+  New Expiry Date: 19-02-2027
+  Amount Paid    : Rs. 3,300
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 4
+
+
+[STEP 6: OPTION 4 - SHOW EXPIRY ALERTS]
+--- MEMBERSHIP EXPIRY ALERTS ---
+Current Date: 19-10-2026
+
+=== ALREADY EXPIRED MEMBERSHIPS ===
+ID       Name                   Plan           Expiry Date    Status
+---------------------------------------------------------------------------
+G0003    Kishanthika M          Monthly        04-07-2025     Expired 472 day(s) ago
+G0011    Deepak Chandran        Monthly        10-10-2026     Expired 9 day(s) ago
+---------------------------------------------------------------------------
+
+=== EXPIRING TODAY / WITHIN NEXT 7 DAYS ===
+ID       Name                   Plan           Expiry Date    Status
+---------------------------------------------------------------------------
+G0005    Kavitha S              Monthly        19-10-2026     Expires TODAY
+G0007    Sneha Patel            Quarterly      24-10-2026     Expires in 5 day(s)
+---------------------------------------------------------------------------
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 5
+
+
+[STEP 7: OPTION 5 - RECORD VALID DAILY CHECK-IN]
+--- DAILY CHECK-IN ---
+Enter Member ID (e.g., G0001): G0001
+[SUCCESS] Check-in recorded for Saadhana Durga (G0001) on 19-10-2026.
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 5
+
+
+[STEP 8: OPTION 5 - REFUSE CHECK-IN FOR EXPIRED MEMBER]
+--- DAILY CHECK-IN ---
+Enter Member ID (e.g., G0001): G0003
+Check-in refused: Membership for Kishanthika M (G0003) expired on 04-07-2025.
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 6
+
+
+[STEP 9: OPTION 6 - COUNT MONTHLY CHECK-INS (SINGLE-DIGIT MONTH '8')]
+--- MONTHLY CHECK-IN COUNT ---
+Enter Member ID (e.g., G0001): G0002
+Enter month (1-12): 8
+Enter year (YYYY): 2026
+
+Total check-ins for Dharshini R (G0002) in 08-2026: 2
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 7
+
+
+[STEP 10: OPTION 7 - MONTHLY REVENUE & ACTIVE MEMBER REPORT]
+--- MONTHLY REVENUE & ACTIVE MEMBER REPORT ---
+Enter month (1-12): 10
+Enter year (YYYY): 2026
+
+==============================================
+ REVENUE REPORT FOR 10-2026
+==============================================
+  Total Payments Received : 5
+  Total Monthly Revenue   : Rs. 12,300
+==============================================
+
+==============================================
+ CURRENT ACTIVE MEMBERS BY PLAN (as of 19-10-2026)
+==============================================
+  Monthly        : 3 member(s)
+  Quarterly      : 5 member(s)
+  Half-yearly    : 1 member(s)
+  Annual         : 2 member(s)
+----------------------------------------------
+  Total Active   : 11 member(s)
+==============================================
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 9
+
+
+[STEP 11: OPTION 9 - BONUS A: MEMBERSHIP FREEZE (ACTIVE MEMBER)]
+--- MEMBERSHIP FREEZE (BONUS FEATURE) ---
+Enter Member ID (e.g., G0001): G0004
+Member Arun Kumar has used 0/15 freeze days (15 day(s) remaining).
+Enter freeze duration in days (1-15): 7
+
+[SUCCESS] Membership frozen successfully!
+  Member ID        : G0004
+  Name             : Arun Kumar
+  Freeze Duration  : 7 day(s)
+  Previous Expiry  : 10-01-2027
+  Extended Expiry  : 17-01-2027
+  Total Used Freeze: 7/15 day(s)
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 9
+
+
+[STEP 12: OPTION 9 - BONUS A: MEMBERSHIP FREEZE (EXPIRED MEMBER REFUSED)]
+--- MEMBERSHIP FREEZE (BONUS FEATURE) ---
+Enter Member ID (e.g., G0001): G0011
+Cannot freeze membership: Membership for Deepak Chandran (G0011) expired on 10-10-2026.
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 10
+
+
+[STEP 13: OPTION 10 - BONUS B: ASSIGN PERSONAL TRAINER]
+--- ASSIGN PERSONAL TRAINER (BONUS FEATURE) ---
+Enter Member ID (e.g., G0001): G0004
+
+--- PERSONAL TRAINER ROSTER & CAPACITY ---
+Trainer ID   Trainer Name         Assigned Members   Capacity
+-----------------------------------------------------------------
+T01          Coach Vikram          0 / 10            Available
+T02          Coach Priya           0 / 10            Available
+T03          Coach Marcus          0 / 10            Available
+-----------------------------------------------------------------
+
+Member: Arun Kumar (G0004) | Current Trainer: Unassigned
+Enter Trainer ID to assign (e.g., T01, T02, T03) or 'CANCEL': T01
+
+[SUCCESS] Member Arun Kumar (G0004) successfully assigned to Coach Vikram (T01)!
+Trainer Coach Vikram now has 1/10 members assigned.
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 10
+
+
+[STEP 14: OPTION 10 - BONUS B: REASSIGN PERSONAL TRAINER]
+--- ASSIGN PERSONAL TRAINER (BONUS FEATURE) ---
+Enter Member ID (e.g., G0001): G0004
+
+--- PERSONAL TRAINER ROSTER & CAPACITY ---
+Trainer ID   Trainer Name         Assigned Members   Capacity
+-----------------------------------------------------------------
+T01          Coach Vikram          1 / 10            Available
+T02          Coach Priya           0 / 10            Available
+T03          Coach Marcus          0 / 10            Available
+-----------------------------------------------------------------
+
+Member: Arun Kumar (G0004) | Current Trainer: T01
+Enter Trainer ID to assign (e.g., T01, T02, T03) or 'CANCEL': T02
+
+[SUCCESS] Member Arun Kumar (G0004) successfully assigned to Coach Priya (T02)!
+Trainer Coach Priya now has 1/10 members assigned.
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 99
+
+
+[STEP 15: INVALID MENU CHOICE HANDLING]
+Invalid choice. Please enter a number from 1 to 10.
+
+========== GYM MEMBERSHIP MANAGER ==========
+1. Register member
+2. View all members
+3. Renew membership
+4. Show expiry alerts
+5. Record daily check-in
+6. Count monthly check-ins
+7. Monthly revenue and active member report
+8. Exit
+--- Optional Bonus Features ---
+9. Freeze membership (Bonus A)
+10. Assign personal trainer (Bonus B)
+============================================
+Enter your choice (1-10): 8
+
+
+[STEP 16: OPTION 8 - EXIT APPLICATION]
+Thank you for using Gym Membership Manager. Goodbye!
+
+
+================================================================================
+           DATA PERSISTENCE & SAMPLE DATASET EXPLANATION
+================================================================================
+1. The above interactive transcript demonstrates the complete life-cycle of
+   the system, executing every required feature and both optional bonus features.
+2. During this interactive session:
+   - 1 new member was registered (G0013, Vikram Seth, Quarterly, Rs. 3,300).
+   - 2 renewals occurred (G0006 for Rs. 1,200 and G0001 for Rs. 3,300).
+   - Total payments recorded in October 2026 increased from the initial 2
+     payments (Rs. 4,500) to 5 payments (Rs. 12,300).
+   - Active members shifted accordingly, showing dynamic calculations.
+3. As required by Phase 4 and Phase 7, the submission data files (members.txt,
+   payments.txt, checkins.txt) are delivered containing the clean, curated
+   baseline sample dataset (12 members, 13 payments, 17 check-ins) so that
+   evaluators can execute fresh tests from a pristine starting state.
+================================================================================
